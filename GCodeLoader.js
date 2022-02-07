@@ -141,7 +141,6 @@ class GCodeLoader extends Loader {
 				}
 
 			} );
-			console.log(cmd)
 			//Process commands
 			//G0/G1 – Linear Movement
 			if (cmd === 'G00' || cmd === 'G0' || cmd === 'G01' || cmd==='G1' || /(([XxYyZz]) *(-?\d+.?\d*)) *(([XxYyZz]) *(-?\d+.?\d*))? *(([XxYyZz]) *(-?\d+.?\d*))?/g.test(cmd)) {
